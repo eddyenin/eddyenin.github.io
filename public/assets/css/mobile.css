@@ -1,0 +1,234 @@
+
+/* Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .hamburger-button .hamburger-line {
+    width: 20px;
+    height: 2px;
+    background: #333;
+    margin: 3px 0;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    background: var(--background-light-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+
+  .mobile-menu.active {
+    right: 0;
+  }
+
+  .mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 5px;
+  }
+
+  .mobile-menu ul li {
+    margin: 5px 0;
+  }
+
+  .mobile-menu ul li a {
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+
+/* Media Queries */
+@media (max-width:960px){
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+    display: block;
+    }
+
+    .profile{
+        display: flex;
+        /* flex-direction: column; */
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+
+    .profile-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* row-gap: 2px; */
+        column-gap: 5px;
+
+    }
+    .profile-details i{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--background-light-color);
+    }
+    .contact-group{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-card{
+        background-color: var(--background-light-color);
+        padding: 20px;
+        margin-bottom: 20px;
+        width:100%;
+        height: 100px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+
+
+}
+
+@media (max-width:670px){
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+    display: block;
+    }
+
+    .container{
+        background-color: white;
+        width: 100%;
+    }
+    .container-wrap{
+        background-color: white;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    .profile-img img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .profile-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* row-gap: 2px; */
+        column-gap: 5px;
+
+    }
+    .profile-details i{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--background-light-color);
+    }
+
+    .profile-skills h2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .skill-grid{
+        display: grid;
+        grid-template-columns:1fr;
+
+    }
+
+    .working-skill{
+        width: 100%;
+
+     }
+
+     .contact-group{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contact-card{
+        background-color: var(--background-light-color);
+        padding: 20px;
+        margin-bottom: 20px;
+        width:100%;
+        height: 100px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    .contact-form{
+        width:100%;
+        background-color: var(--grey-color);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (max-width:500px){
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+    display: block;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    .profile-img img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .profile-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* row-gap: 2px; */
+        column-gap: 5px;
+
+    }
+    .profile-details i{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--background-light-color);
+    }
+
+    .profile-skills h2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .skill-grid{
+        display: grid;
+        grid-template-columns:1fr;
+
+    }
+
+}
